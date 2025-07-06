@@ -24,7 +24,9 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run fetcher.py
-      run: python fetcher.py
+      run: 
+          python --version
+          python fetcher.py
 
     - name: Commit and push changes
       run: |
