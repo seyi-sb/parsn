@@ -1,4 +1,4 @@
-# Parsn
+# PARSN
 
 **Parsn** is a lightweight, self-updating tech news site that delivers the latest in technology trends, IT tips, and smart DIYs — all in one clutter-free layout.
 
