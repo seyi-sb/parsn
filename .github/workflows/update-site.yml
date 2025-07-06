@@ -1,17 +1,17 @@
-name: Update Site with Python Script
+name: Update Site
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '0 */1 * * *'  # every 1 hours
-  workflow_dispatch:       # manual trigger button
+    - cron: '0 */3 * * *'  # every 3 hours
 
 jobs:
-  run-script:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+    - name: Checkout repo
+      uses: actions/checkout@v4
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -23,13 +23,15 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run fetcher script
+    - name: Run fetcher.py
       run: python fetcher.py
 
     - name: Commit and push changes
       run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add .
-        git commit -m "Update site content via GitHub Actions" || echo "No changes"
-        git push
+        git commit -m "Update site content" || echo "No changes to commit"
+        git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
