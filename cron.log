@@ -1,74 +1,4 @@
-/Users/seyi./Dev/parsn/auto_update.sh: line 3: cd: /Users/your-username/path/to/parsn: No such file or directory
-/Users/seyi./Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
-  warnings.warn(
-/Users/seyi./Dev/parsn/auto_update.sh: line 3: cd: /Users/your-username/path/to/parsn: No such file or directory
-/Applications/Xcode.app/Contents/Developer/usr/bin/python3: can't open file '/Users/seyi./fetcher.py': [Errno 2] No such file or directory
-fatal: not a git repository (or any of the parent directories): .git
-fatal: not a git repository (or any of the parent directories): .git
-No changes
-fatal: not a git repository (or any of the parent directories): .git
-/Users/seyi./Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
-  warnings.warn(
 
-✅ Finished in 1.33 minutes
-[main a62a339] 🤖 Auto update
- Committer: seyi <seyi.@seyis-MBP.powerhub>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly. Run the
-following command and follow the instructions in your editor to edit
-your configuration file:
-
-    git config --global --edit
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 3 files changed, 30 insertions(+), 26 deletions(-)
-fatal: could not read Username for 'https://github.com': Device not configured
------ Auto update started at 2025-07-07 08:00:00 -----
-/Users/seyi./Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
-  warnings.warn(
-
-✅ Finished in 1.44 minutes
-[main e466683] 🤖 Auto update
- Committer: seyi <seyi.@seyis-MBP.powerhub>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly. Run the
-following command and follow the instructions in your editor to edit
-your configuration file:
-
-    git config --global --edit
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 2 files changed, 9 insertions(+), 4 deletions(-)
-fatal: could not read Username for 'https://github.com': Device not configured
------ Auto update started at 2025-07-07 08:10:00 -----
-/Users/seyi./Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
-  warnings.warn(
-
-✅ Finished in 1.35 minutes
-[main 510d26d] 🤖 Auto update
- Committer: seyi <seyi.@seyis-MBP.powerhub>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly. Run the
-following command and follow the instructions in your editor to edit
-your configuration file:
-
-    git config --global --edit
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 3 files changed, 71 insertions(+), 50 deletions(-)
-fatal: could not read Username for 'https://github.com': Device not configured
 ----- Auto update started at 2025-07-07 08:20:00 -----
 /Users/seyi./Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
   warnings.warn(
@@ -91,3 +21,8 @@ After doing this, you may fix the identity used for this commit with:
  2 files changed, 8 insertions(+), 6 deletions(-)
 remote: Permission to seyi-sb/parsn.git denied to seyi-sb.
 fatal: unable to access 'https://github.com/seyi-sb/parsn.git/': The requested URL returned error: 403
+----- Auto update started at 2025-07-07 08:30:00 -----
+/Users/seyi./Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+
+✅ Finished in 1.51 minutes
