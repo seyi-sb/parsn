@@ -1,0 +1,9 @@
+/Users/seyi./Dev/parsn/auto_update.sh: line 3: cd: /Users/your-username/path/to/parsn: No such file or directory
+/Users/seyi./Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/seyi./Dev/parsn/auto_update.sh: line 3: cd: /Users/your-username/path/to/parsn: No such file or directory
+/Applications/Xcode.app/Contents/Developer/usr/bin/python3: can't open file '/Users/seyi./fetcher.py': [Errno 2] No such file or directory
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+No changes
+fatal: not a git repository (or any of the parent directories): .git
