@@ -1,0 +1,9 @@
+feedparser
+python-slugify
+newspaper3k
+beautifulsoup4
+sumy
+rake-nltk
+requests
+Jinja2
+python-dateutil
