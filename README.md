@@ -42,12 +42,14 @@ This process can run:
 
 ---
 
+---
+
 ### 🔮 Future Updates
 
 Parsn is still growing. Here's what’s planned for upcoming versions:
 
 - 📝 **Dedicated article pages**  
-  Each story will have its own page with a unique URL (slug) like `articles/ai-will-change-jobs.html`.
+  Each story will have its own unique page for better structure and sharing.
 
 - 🧠 **More advanced summaries**  
   Future versions will use multiple AI models to generate deeper, more human-like summaries.
@@ -58,8 +60,5 @@ Parsn is still growing. Here's what’s planned for upcoming versions:
 - 🔍 **Search and filter**  
   Visitors will be able to search and sort stories by topics or keywords.
 
-- 🧰 **Personalized toolkits and widgets**  
-  Plans to add extra features like tech tools, newsletter signups, or productivity widgets.
-
-- 🚀 **Parsn Pack (Starter Kit)**  
-  A plug-and-play version that lets anyone launch their own automated content site in minutes.
+- 📱 **New responsive user experience**  
+  A redesigned layout for smoother browsing across mobile, tablet, and desktop devices.
