@@ -3,6 +3,7 @@ import feedparser
 import os, json
 import re
 import requests
+import random
 from jinja2 import Environment, FileSystemLoader
 from datetime import datetime
 from feeds_config import rss_feeds
@@ -17,6 +18,42 @@ from dateutil import parser
 
 UNSPLASH_ACCESS_KEY = "pjuyEr1YqaYaX1o5viB6zP65iI_hyAXVyMebrqKok1o"
 rake = Rake()
+
+def paraphrase_title(title):
+    replacements = {
+        "launches": ["unveils", "releases", "rolls out", "introduces"],
+        "announces": ["reveals", "shares", "discloses"],
+        "reveals": ["uncovers", "presents", "highlights"],
+        "AI": ["artificial intelligence", "AI-based", "machine learning"],
+        "tool": ["platform", "solution", "app"],
+        "update": ["refresh", "revision", "upgrade"],
+        "feature": ["function", "capability", "option"],
+        "platform": ["service", "ecosystem"],
+        "report": ["findings", "brief", "summary"],
+        "says": ["notes", "mentions", "claims"]
+    }
+
+    words = title.split()
+    new_words = []
+
+    for word in words:
+        key = word.lower()
+        if key in replacements:
+            # Preserve original capitalization
+            replacement = random.choice(replacements[key])
+            if word[0].isupper():
+                replacement = replacement.capitalize()
+            new_words.append(replacement)
+        else:
+            new_words.append(word)
+
+    # Swap simple structure e.g. "Google releases tool" → "Tool released by Google"
+    if "by" not in title.lower() and len(new_words) > 2:
+        if new_words[0][0].isupper():  # likely a company or name
+            new_words = new_words[1:] + ["by", new_words[0]]
+
+    return " ".join(new_words)
+
 
 def get_full_article_text(url):
     try:
@@ -110,7 +147,9 @@ def fetch_all_feeds(feed_urls):
     for url in feed_urls:
         feed = feedparser.parse(url)
         for entry in feed.entries:
-            title = entry.get("title", "No title")
+            original_title = entry.get("title", "No title")
+            title = paraphrase_title(original_title)
+
             summary_raw = entry.get("summary", "No summary")
             summary_clean = BeautifulSoup(summary_raw, "html.parser").get_text()
             slug = generate_slug(title)
