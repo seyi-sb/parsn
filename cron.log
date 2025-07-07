@@ -74,3 +74,20 @@ fatal: could not read Username for 'https://github.com': Device not configured
   warnings.warn(
 
 ✅ Finished in 1.40 minutes
+[main c9c18a0] 🤖 Auto update
+ Committer: seyi <seyi.@seyis-MBP.powerhub>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 8 insertions(+), 6 deletions(-)
+remote: Permission to seyi-sb/parsn.git denied to seyi-sb.
+fatal: unable to access 'https://github.com/seyi-sb/parsn.git/': The requested URL returned error: 403
