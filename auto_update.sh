@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "----- Auto update started at $(date '+%Y-%m-%d %H:%M:%S') -----" >> /Users/seyi./Dev/parsn/cron.log
 
 cd /Users/seyi./Dev/parsn
 

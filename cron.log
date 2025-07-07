@@ -11,3 +11,19 @@ fatal: not a git repository (or any of the parent directories): .git
   warnings.warn(
 
 ✅ Finished in 1.33 minutes
+[main a62a339] 🤖 Auto update
+ Committer: seyi <seyi.@seyis-MBP.powerhub>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 30 insertions(+), 26 deletions(-)
+fatal: could not read Username for 'https://github.com': Device not configured
