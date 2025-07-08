@@ -3050,3 +3050,36 @@ After doing this, you may fix the identity used for this commit with:
  2 files changed, 32 insertions(+), 1 deletion(-)
 To https://github.com/seyi-sb/parsn.git
    741462b..9fc0dea  main -> main
+----- Auto update started at 2025-07-08 22:20:00 -----
+/Users/seyi./Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/seyi./Dev/parsn/fetcher.py", line 215, in <module>
+    main()
+  File "/Users/seyi./Dev/parsn/fetcher.py", line 194, in main
+    articles = fetch_all_feeds(rss_feeds)
+  File "/Users/seyi./Dev/parsn/fetcher.py", line 152, in fetch_all_feeds
+    full_summary = summarize_full_text(full_article_text, sentence_count=10)
+  File "/Users/seyi./Dev/parsn/fetcher.py", line 45, in summarize_full_text
+    summary = summarizer(parser.document, sentence_count)
+  File "/Users/seyi./Library/Python/3.9/lib/python/site-packages/sumy/summarizers/lsa.py", line 38, in __call__
+    dictionary = self._create_dictionary(document)
+  File "/Users/seyi./Library/Python/3.9/lib/python/site-packages/sumy/summarizers/lsa.py", line 57, in _create_dictionary
+    words = map(self.normalize_word, document.words)
+  File "/Users/seyi./Library/Python/3.9/lib/python/site-packages/sumy/utils.py", line 53, in decorator
+    setattr(self, key, getter(self))
+  File "/Users/seyi./Library/Python/3.9/lib/python/site-packages/sumy/models/dom/_document.py", line 33, in words
+    return tuple(chain(*words))
+  File "/Users/seyi./Library/Python/3.9/lib/python/site-packages/sumy/models/dom/_document.py", line 32, in <genexpr>
+    words = (p.words for p in self._paragraphs)
+  File "/Users/seyi./Library/Python/3.9/lib/python/site-packages/sumy/utils.py", line 53, in decorator
+    setattr(self, key, getter(self))
+  File "/Users/seyi./Library/Python/3.9/lib/python/site-packages/sumy/models/dom/_paragraph.py", line 39, in words
+    return tuple(chain(*(s.words for s in self._sentences)))
+  File "/Users/seyi./Library/Python/3.9/lib/python/site-packages/sumy/models/dom/_paragraph.py", line 39, in <genexpr>
+    return tuple(chain(*(s.words for s in self._sentences)))
+  File "/Users/seyi./Library/Python/3.9/lib/python/site-packages/sumy/utils.py", line 53, in decorator
+    setattr(self, key, getter(self))
+  File "/Users/seyi./Library/Python/3.9/lib/python/site-packages/sumy/models/dom/_sentence.py", line 21, in words
+    return self._tokenizer.to_words(self._text)
+AttributeError: 'CustomTokenizer' object has no attribute 'to_words'

@@ -37,7 +37,7 @@ def summarize_full_text(text, sentence_count=10):
         def __init__(self, language="english"):
             self.language = language
 
-        def tokenize(self, text):
+        def to_sentences(self, text):
             return sent_tokenize(text)
 
     parser = PlaintextParser.from_string(text, CustomTokenizer())
@@ -45,19 +45,35 @@ def summarize_full_text(text, sentence_count=10):
     summary = summarizer(parser.document, sentence_count)
     return " ".join(str(sentence) for sentence in summary)
 
+
 def get_summary(html_text, sentence_count=3):
-    plain_text = BeautifulSoup(html_text, "html.parser").get_text()
     class CustomTokenizer:
         def __init__(self, language="english"):
             self.language = language
 
-        def tokenize(self, text):
+        def to_sentences(self, text):
             return sent_tokenize(text)
 
+    plain_text = BeautifulSoup(html_text, "html.parser").get_text()
     parser = PlaintextParser.from_string(plain_text, CustomTokenizer())
     summarizer = LsaSummarizer()
     summary_sentences = summarizer(parser.document, sentence_count)
     return " ".join(str(sentence) for sentence in summary_sentences)
+
+def get_summary(html_text, sentence_count=3):
+    class CustomTokenizer:
+        def __init__(self, language="english"):
+            self.language = language
+
+        def to_sentences(self, text):
+            return sent_tokenize(text)
+
+    plain_text = BeautifulSoup(html_text, "html.parser").get_text()
+    parser = PlaintextParser.from_string(plain_text, CustomTokenizer())
+    summarizer = LsaSummarizer()
+    summary_sentences = summarizer(parser.document, sentence_count)
+    return " ".join(str(sentence) for sentence in summary_sentences)
+
 
 def get_fallback_image(summary):
     rake.extract_keywords_from_text(summary)
