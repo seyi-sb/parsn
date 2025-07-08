@@ -3033,3 +3033,20 @@ Traceback (most recent call last):
   File "/Users/seyi./Dev/parsn/fetcher.py", line 36, in summarize_full_text
     parser = PlaintextParser.from_string(text, Tokenizer("english"))
 NameError: name 'Tokenizer' is not defined
+[main 9fc0dea] 🤖 Auto update
+ Committer: seyi <seyi.@seyis-MBP.powerhub>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 32 insertions(+), 1 deletion(-)
+To https://github.com/seyi-sb/parsn.git
+   741462b..9fc0dea  main -> main
