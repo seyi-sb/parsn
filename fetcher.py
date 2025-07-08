@@ -9,7 +9,7 @@ from datetime import datetime
 from feeds_config import rss_feeds
 from rake_nltk import Rake
 from sumy.parsers.plaintext import PlaintextParser
-from nltk.tokenize import sent_tokenize
+from nltk.tokenize import sent_tokenize, word_tokenize
 from sumy.summarizers.lsa import LsaSummarizer
 from bs4 import BeautifulSoup
 from slugify import slugify  # pip install python-slugify
@@ -41,7 +41,10 @@ def summarize_full_text(text, sentence_count=10):
             self.language = language
 
         def to_sentences(self, text):
-            return basic_sent_tokenize(text)
+            return sent_tokenize(text)
+
+        def to_words(self, text):
+            return word_tokenize(text)
 
     parser = PlaintextParser.from_string(text, CustomTokenizer())
     summarizer = LsaSummarizer()
@@ -55,7 +58,10 @@ def get_summary(html_text, sentence_count=3):
             self.language = language
 
         def to_sentences(self, text):
-            return basic_sent_tokenize
+            return sent_tokenize(text)
+
+        def to_words(self, text):
+            return word_tokenize(text)
 
     plain_text = BeautifulSoup(html_text, "html.parser").get_text()
     parser = PlaintextParser.from_string(plain_text, CustomTokenizer())
@@ -69,7 +75,10 @@ def get_summary(html_text, sentence_count=3):
             self.language = language
 
         def to_sentences(self, text):
-            return basic_sent_tokenize
+            return sent_tokenize(text)
+
+        def to_words(self, text):
+            return word_tokenize(text)
 
     plain_text = BeautifulSoup(html_text, "html.parser").get_text()
     parser = PlaintextParser.from_string(plain_text, CustomTokenizer())
