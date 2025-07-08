@@ -1,1 +1,4 @@
-www.parsn.co.uk
+echo "parsn.co.uk" > CNAME
+git add CNAME
+git commit -m "Add root domain for GitHub Pages"
+git push origin main
