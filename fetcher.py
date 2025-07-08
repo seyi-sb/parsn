@@ -4,11 +4,12 @@ import os, json
 import re
 import requests
 from jinja2 import Environment, FileSystemLoader
+from nltk.tokenize import sent_tokenize
 from datetime import datetime
 from feeds_config import rss_feeds
 from rake_nltk import Rake
 from sumy.parsers.plaintext import PlaintextParser
-from sumy.nlp.tokenizers import Tokenizer
+from nltk.tokenize import sent_tokenize
 from sumy.summarizers.lsa import LsaSummarizer
 from bs4 import BeautifulSoup
 from slugify import slugify  # pip install python-slugify
