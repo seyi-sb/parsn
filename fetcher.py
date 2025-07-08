@@ -19,6 +19,9 @@ from dateutil import parser
 UNSPLASH_ACCESS_KEY = "pjuyEr1YqaYaX1o5viB6zP65iI_hyAXVyMebrqKok1o"
 rake = Rake()
 
+def basic_sent_tokenize(text):
+    return re.split(r'(?<=[.!?])\s+', text.strip())
+
 def get_full_article_text(url):
     try:
         article = Article(url)
@@ -38,7 +41,7 @@ def summarize_full_text(text, sentence_count=10):
             self.language = language
 
         def to_sentences(self, text):
-            return sent_tokenize(text)
+            return basic_sent_tokenize(text)
 
     parser = PlaintextParser.from_string(text, CustomTokenizer())
     summarizer = LsaSummarizer()
@@ -52,7 +55,7 @@ def get_summary(html_text, sentence_count=3):
             self.language = language
 
         def to_sentences(self, text):
-            return sent_tokenize(text)
+            return basic_sent_tokenize
 
     plain_text = BeautifulSoup(html_text, "html.parser").get_text()
     parser = PlaintextParser.from_string(plain_text, CustomTokenizer())
@@ -66,7 +69,7 @@ def get_summary(html_text, sentence_count=3):
             self.language = language
 
         def to_sentences(self, text):
-            return sent_tokenize(text)
+            return basic_sent_tokenize
 
     plain_text = BeautifulSoup(html_text, "html.parser").get_text()
     parser = PlaintextParser.from_string(plain_text, CustomTokenizer())
