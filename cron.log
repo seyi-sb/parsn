@@ -3133,3 +3133,20 @@ Traceback (most recent call last):
   File "/Users/seyi./Library/Python/3.9/lib/python/site-packages/sumy/models/dom/_sentence.py", line 21, in words
     return self._tokenizer.to_words(self._text)
 AttributeError: 'CustomTokenizer' object has no attribute 'to_words'
+[main 7527c61] 🤖 Auto update
+ Committer: seyi <seyi.@seyis-MBP.powerhub>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 56 insertions(+), 3 deletions(-)
+To https://github.com/seyi-sb/parsn.git
+   9e5590a..7527c61  main -> main
