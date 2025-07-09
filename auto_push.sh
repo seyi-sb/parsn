@@ -13,9 +13,6 @@ git checkout main
 git fetch origin
 git reset --hard origin/main
 
-# Activate your Python virtual environment (if needed)
-source .venv/bin/activate
-
 # Run your fetcher script to generate new index.html and articles.json
 python3 fetcher.py
 
