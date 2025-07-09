@@ -14,7 +14,7 @@ git fetch origin
 git reset --hard origin/main
 
 # Run your fetcher script to generate new index.html and articles.json
-python3 fetcher.py
+python3 fetcher.py >> cron.log 2>&1
 
 # Stage and commit any new changes
 git add articles.json index.html
