@@ -1,5 +1,14 @@
 [
   {
+    "title": "US Army soldier pleads guilty to hacking telcos and extortion",
+    "slug": "us-army-soldier-pleads-guilty-to-hacking-telcos-and-extortion",
+    "link": "https://techcrunch.com/2025/07/15/us-army-soldier-pleads-guilty-to-hacking-telcos-and-extortion/",
+    "published": "2025-07-15 21:41",
+    "image": "https://images.unsplash.com/photo-1589307904488-7d60ff29c975?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NjMyMjh8MHwxfHNlYXJjaHwxfHxhbHJlYWR5JTIwcGxlYWRlZCUyMGd1aWx0eXxlbnwwfHx8fDE3NTI2MTU5MDN8MA&ixlib=rb-4.1.0&q=80&w=400",
+    "summary": "Cameron Wagenius had already pleaded guilty to other charges earlier this year.",
+    "full_text": "Former U.S. Army soldier Cameron John Wagenius pleaded guilty to hacking telecommunication companies and attempting to extort them by threatening to release stolen files, the Department of Justice announced on Tuesday. According to the DOJ, Wagenius, who went online with the nickname “kiberphant0m,” conspired to defraud 10 victim companies by stealing their login credentials, using brute force attacks and other techniques, and then used Telegram group chats to transfer the stolen credentials and discusses hacks. Wagenius and his conspirators also attempted to extort their victims in private and in public, including on hacking forums such as the notorious BreachForums. They sold some of the stolen data and also used the stolen credentials to commit other frauds, including SIM swapping victims. Earlier this year, Wagenius had already pleaded guilty to hacking AT&T and Verizon, a breach that led to him stealing a massive amount of call records. Wagenius’ sentencing is scheduled for October 6, and he faces 20 years in prison, according to the press release. The hacker has been linked to a series of hacks that originated from the breach of could computing services giant Snowflake."
+  },
+  {
     "title": "To make Ironheart feel tactile, the show&#8217;s creative team had to get on the same page",
     "slug": "to-make-ironheart-feel-tactile-the-show-s-creative-team-had-to-get-on-the-same-page",
     "link": "https://www.theverge.com/tv/707329/ironheart-alison-kelly-interview",
@@ -411,7 +420,7 @@
     "published": "2025-07-15 16:28",
     "image": "https://www.cnet.com/a/img/resize/837b400de41f50a97b52a8c799b193be01cea440/hub/2024/05/28/20480816-214e-4fcc-a9b4-b02f0ac71e7c/wordle-word-game-hints-puzzle-8667.jpg?auto=webp&fit=crop&height=614&width=1092",
     "summary": "Find hints and the answer for the July 15 Wordle puzzle. This one's just hard enough to break some streaks.",
-    "full_text": "Today's Wordle puzzle might trip a lot of people up, and even break some streaks. If you need a new starter word, check out our list of which letters show up the most in English words. The two vowels in today's Wordle answer are next to each other. Today's Wordle answer can refer to imposing something that is unwelcome. Apparently, today's Wordle word itself is an unwelcome something. Complaints are rife on X that this one-word vocab test had players stumped. \"A word I've never used in my 50 year existence,\" wrote one frustrated Wordler. \"I swear that's not a real word,\" griped another. Said one lucky soul: \"Who knew my first guess would lead to the a mysterious word I never heard of in four?\" Don't forget that letters can be used more than once."
+    "full_text": "Today's Wordle puzzle might trip a lot of people up, and even break some streaks. If you need a new starter word, check out our list of which letters show up the most in English words. If you don't want a spoiler, look away now. The two vowels in today's Wordle answer are next to each other. Today's Wordle answer can refer to imposing something that is unwelcome. Apparently, today's Wordle word itself is an unwelcome something. Complaints are rife on X that this one-word vocab test had players stumped. \"A word I've never used in my 50 year existence,\" wrote one frustrated Wordler. \"I swear that's not a real word,\" griped another. Said one lucky soul: \"Who knew my first guess would lead to the a mysterious word I never heard of in four?\""
   },
   {
     "title": "Research leaders urge tech industry to monitor AI’s ‘thoughts’",
@@ -628,15 +637,6 @@
     "image": "https://images.unsplash.com/photo-1687529699742-a7e97c518dca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NjMyMjh8MHwxfHNlYXJjaHwxfHwlRTIlODAlOUMlMjByYWlzZXMlMjBxdWVzdGlvbnMlMjAlRTIlODAlOUR8ZW58MHx8fHwxNzUyNTg3MTA0fDA&ixlib=rb-4.1.0&q=80&w=400",
     "summary": "The researcher who found the exposed key said it “raises questions” about how DOGE handles sensitive data.",
     "full_text": "In Brief A DOGE staffer with access to the private information on millions of Americans held by the U.S. government reportedly exposed a private API key used for interacting with Elon Musk’s xAI chatbot. Independent security journalist Brian Krebs reports that Marko Elez, a special government employee who in recent months has worked on sensitive systems at the U.S. Treasury, the Social Security Administration, and Homeland Security, recently published code to his GitHub containing the private key. The key allowed access to dozens of models developed by xAI, including Grok. Philippe Caturegli, founder of consultancy firm Seralys, alerted Elez to the leak earlier this week. Elez removed the key from his GitHub but the key itself was not revoked, allowing continued access to the AI models. “If a developer can’t keep an API key private, it raises questions about how they’re handling far more sensitive government information behind closed doors,” Caturegli told KrebsOnSecurity."
-  },
-  {
-    "title": "China’s Geely is officially bringing its luxury EV startup Zeekr private",
-    "slug": "chinas-geely-is-officially-bringing-its-luxury-ev-startup-zeekr-private",
-    "link": "https://techcrunch.com/2025/07/15/chinas-geely-is-officially-bringing-its-luxury-ev-startup-zeekr-private/",
-    "published": "2025-07-15 13:32",
-    "image": "https://images.unsplash.com/photo-1746439324859-b182173a9790?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NjMyMjh8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBldiUyMHN1YnNpZGlhcnklMjB6ZWVrciUyMHByaXZhdGV8ZW58MHx8fHwxNzUyNTg3MTA2fDA&ixlib=rb-4.1.0&q=80&w=400",
-    "summary": "China’s Geely Auto is officially taking its luxury EV subsidiary Zeekr private, just over a year after the company debuted on the New York Stock Exchange.",
-    "full_text": "China’s Geely Auto is officially taking its luxury EV subsidiary Zeekr private, just over a year after the company debuted on the New York Stock Exchange. The news comes two months after Geely offered to take Zeekr private, following President Donald Trump’s threats earlier this year to delist Chinese stocks from U.S. exchanges. When the merger closes, Zeekr shareholders will receive either $2.69 in cash per share or 1.23 newly issued Geely shares for each Zeekr share they own, per a regulatory filing. Holders of Zeekr American depositary shares (ADSs), which each represent 10 Zeekr shares, will receive either $26.87 in cash or 12.3 Geely shares, delivered as Geely ADSs. It’s a slightly higher offering than what Geely first proposed in May. Investors can choose between cash or stock options, except for certain Hong Kong retail investors, who will receive cash by default. Zeekr’s board has already approved the merger, which is expected to close in the fourth quarter of 2025. It’s not clear how Zeekr’s move to go private will affect its deal with Waymo to build purpose-built robotaxis for large-scale deployment in the U.S. Waymo is expected to launch its Zeekr vehicles in the Bay Area this year, some of which have been spotted testing on the roads of San Francisco. TechCrunch has reached out to Waymo for more information."
   },
   {
     "title": "Grok's AI chatbot now includes companions for you to 'romance'",
